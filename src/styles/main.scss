@@ -1,0 +1,7 @@
+// @use 'abstracts/fonts';
+// @use 'abstracts/colors';
+@use './abstracts' as *;
+
+body{
+    background-color: $red;
+}
