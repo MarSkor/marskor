@@ -1,0 +1,39 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin res-img{
+    width: 100%;
+    height: auto;
+}
+
+@mixin align-flex{
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+@mixin centerAlign-flex{
+    justify-content: center;
+    display: flex;
+}
+
+@mixin centerflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin boxShadow{
+    box-shadow: 1px 7px 9px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 7px 9px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 9px -2px rgba(0,0,0,0.75);
+}
+
+@mixin boxShadowSmall{
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(14, 14, 14, 0.12);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(14, 14, 14, 0.12);
+    box-shadow: 0px 2px 6px 0px rgba(14, 14, 14, 0.12);
+}

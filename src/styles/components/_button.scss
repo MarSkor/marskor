@@ -1,0 +1,147 @@
+.btn-container{
+    margin-top: 60px;
+}
+
+
+.btn{
+    font-family: $font-opensans;
+    text-decoration: none;
+    font-weight: 500;
+    color: $woodsmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 4px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+        
+.btn-default {
+    background-image: linear-gradient(to right, var(--color-h-swap) 0%, var(--color-secondary)  51%, var(--color-h-swap) 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--color-font-hover);            
+    box-shadow: 0 0 10px var(--color-gradient);
+  }
+
+
+  .btn-default:hover {
+    background-position: right center; 
+    text-decoration: none;
+  }
+ 
+
+.btn-submit{
+    margin-top:20px;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width:640px){
+    .btn{
+        font-size: 14px;
+    }
+    form button{
+        margin: 0 auto;
+    }
+}
+
+.btn-secondary {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    padding: 1em 2em;
+    text-decoration: none;
+  }
+
+
+.btn-secondary {  
+    color: var(--color-electric-violet);
+    transition: 0.25s;
+    border-radius: 4px;
+    &:hover,
+    &:focus { 
+        border-color: var(--color-electric-violet);
+        color: var(--color-bg);
+    }
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    box-shadow: inset 200px 0 0 0 var(--color-electric-violet);
+}
+
+// ----------------------------------------LINKS
+
+a.link {
+    font-weight: 600;
+    color: var(--color-electric-violet);
+    text-decoration: none;
+    transition: .2s ease;
+  }
+
+  a.link:hover{
+    background-color: var(--color-electric-violet);
+    color: var(--color-bg);
+  }
+ 
+
+.footer-wrap__totop {
+    width: 60px;
+    height: 60px;
+    background: var(--color-h-swap);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .footer-wrap__totop:hover {
+    background: $electric-violet-tint;
+  }
+
+  .arrow-up{
+    color: var(--color-bg);
+  }
+
+
+// ----------------------------------------ICONS
+
+  
+.icon-send{
+  margin-left: 4px;
+  stroke-width: 2;
+  color: var(--color-font-hover);
+}
+
+.feather-24{
+  height: 24px;
+  width: 24px;
+
+}
+
+.feather-25, .icon-25{
+  height: 25px;
+  width: 25px;
+  transition: .2s ease-in-out; 
+}
+
+.feather-25:hover{
+  height: 30px;
+  width: 30px;
+}

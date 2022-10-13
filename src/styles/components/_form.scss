@@ -1,0 +1,60 @@
+form {
+        font-family: $font-opensans;
+        padding: 20px 0px;
+        
+    }
+    
+
+  @media screen and (min-width: 640px){
+    form{
+      width: 90%;
+    }
+  }
+
+
+form{
+  .field{
+    padding-bottom: 30px;
+  
+    &__input{
+      font-family: $font-opensans;
+      font-size: 14px;
+      background: none;
+      display: block;
+      width: 100%;
+      outline: none;
+      border: 1px solid var(--color-grey);
+      border-radius: 4px;
+      padding: 1.2rem ;
+      color: var(--color-font);
+      
+    }
+    &__input::placeholder{
+      color:var(--color-grey);
+    }
+
+    .textinput{
+      height: 150px;
+      resize: none;
+    }
+  }
+ 
+ 
+}
+
+section.contact form input:focus, 
+section.contact form textarea:focus{
+  border: 1.5px solid var(--color-h-swap);
+}
+
+section.contact form input:required:invalid, 
+section.contact form textarea:required:invalid {
+  -webkit-box-shadow: 2px 2px $error;
+  box-shadow: 2px 2px $error;
+}
+
+section.contact form input:required:valid, 
+section.contact form textarea:required:valid {
+  -webkit-box-shadow: 2px 2px $success;
+  box-shadow: 2px 2px $success;
+}

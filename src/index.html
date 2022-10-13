@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Martine's Portfolio Website">
+    <meta name="keywords" content="portfolio, website, front-end developer, UI Designer">
+    <meta name="author" content="Martine S. Skorbakk">
+    <title>Martine's Portfolio</title>
+</head>
+<body>
+    
+        <!-- nav section -->
+        <nav id="nav">
+            <div class="nav-wrap">
+                <a href="#intro" class="logo logo__animation">M_</a>
+                
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                   <span></span>
+                </label>
+              
+                <ul id="navMenu">
+                    <li>
+                        <a class="introNavLink navLink" href="#intro">
+                            <span class="bracket">{</span> Home <span class="bracket">}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aboutNavLink navLink" href="#about">
+                            <span class="bracket">{</span> About <span class="bracket">}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="workNavLink navLink" href="#work">
+                            <span class="bracket">{</span> Work <span class="bracket">}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contactNavLink navLink" href="#contact">
+                            <span class="bracket">{</span> Contact <span class="bracket">}</span>
+                        </a>
+                    </li>
+                </ul> 
+  
+
+                <span class="theme-switch-wrap">
+                    <label class="switch">
+                        <input class='toggle-checkbox' type='checkbox'></input>
+                        <div class='toggle-slot'>
+                            <div class='sun-icon-wrapper'>
+                                <i data-feather="sun" class="sun-icon"></i>
+                            </div>
+                            <div class='toggle-button'></div>
+                          <div class='moon-icon-wrapper'>
+                            <i data-feather="moon" class="moon-icon"></i>
+                          </div>  
+                        </div>
+                    </label>
+                </span>
+            </div>
+        </nav>
+        
+        
+        
+    <main class="container" >
+
+        <!-- introduction section -->
+        <section class="intro" id="intro">
+            <div class="intro__content">
+                <h1>Hi, I'm <span class="myNameH1">Martine.</span></h1>
+                <div class="intro__paragraph">
+                    <h2 class="intro__h2">I like building things for the web.</h2>
+                    <p>I'm a front-end developer & UI designer based in Norway.</p>
+                </div>
+
+                <div class="btn-container">
+                    <a href="mailto:marty99skor@gmail.com" class="btn btn-default">Contact me <i data-feather="send" class="icon icon-send"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+       
+
+        <!-- about section -->
+        <section class="about content__wrap" id="about">
+            <div class="about__content">
+                    <h2>About.</h2>
+                    <h5>Front-end Developer / UI Designer</h5>
+                    <div class="row">
+                        <div class="left-column column">
+                            <div class="text-content">
+                                <p>Hello! My name is Martine and I like designing and creating things that will end up on the internet. I have always had a bit of interest in creating digital things, but my interest for it turned serious first in 2019 and have only increased since then. </p>
+                                <p>I am aiming to create better user experience, beautiful yet simple and accessible designs and writing clean and human code.</p>
+                                <p></p>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h4>Toolbox and things I work with:</h4>
+                                <!-- <h5>How products come to life:</h5> -->
+                                <div class="design">
+                                    <h5>Design</h5>
+                                    <p>Adobe- Xd, Illustrator, Photoshop. Figma, Miro, Invision</p>
+
+                                    <p>My Design process:</p>
+                                    <div class="design-process">
+                                        <span><p>1. User Research</p></span>
+                                        <span><p>2. Ideation</p></span>
+                                        <span><p>3. Prototype</p></span>
+                                        <span><p>4. Test / Development</p></span>
+                                    </div>
+                                </div>
+
+                                <div class="front-end">
+                                    <h5>Coding</h5>
+                                    <p>HTML5, CSS3, SCSS, JavaScript, React, Git, Github, RESTful API, Firebase, Netlify, Heroku, Headless CMS (Strapi), Wordpress, Responsive Websites and Web Accessibility.</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="current-technologies">
+                                <h4>Currently working on:</h4>
+                                <p>Improving my understand of (vanilla) JavaScript as well as React and FireBase. I also try and do some challenges on <a class="link" href="https://www.frontendmentor.io/challenges">frontendmentor</a>.</p>
+                            </div>
+                        </div>
+                        <div class="right-column column">
+                            <div class="about-img-container">
+                                <div class="img-wrapper">
+                                    <img class="about-img" src="./assets/images/nature-and-hiking.png" alt="in the nature">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- work -->
+        <section class="work content__wrap" id="work">
+            <div class="work__content">
+                <h2>Work.</h2>
+                <p>A few selected things I have made.</p>
+                <div class="row_projects works">
+                    <div class="left-column column work__column">
+                        <div class="projects-img-container">
+                            <img class="project-img p1" src="assets/images/treelife.png" alt="treelife website design screenshot">
+                        </div>
+           
+                    </div>
+                    <div class="right-column column work__column ">
+                        <h3>Treelife</h3>
+                        <span class="case-wrap">
+                            <h4 class="case-study">UID Case Study</h4>
+                        </span>
+                        <p>Treelife. Provide information on trees and how to help stop the climate change. Donations, so treelife can continue to plant trees is also an option.</p>
+
+                        <div class="project-made-with">
+                            <span class="icon-wrap xd-icon">
+                                <i class="fi fi-brands-xd fi-icon" alt="adobe xd icon" title="adobe xd"></i>
+                            </span>
+                            <p>| Pen & Paper</p>
+                        </div>
+                        <div class="work-source">
+                            <a class="btn btn-secondary" href="./work/treelife.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row_projects works">
+                    <div class="left-column column work__column">
+                        <div class="projects-img-container">
+                            <img class="project-img p1" src="assets/images/solarsmart.png" alt="solarsmart website design screenshot">
+                        </div>
+           
+                    </div>
+                    <div class="right-column column work__column">
+                        <h3>SolarSmart</h3>
+                        <span class="case-wrap">
+                            <h4 class="case-study">UID Case Study</h4>
+                        </span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, facilis animi itaque, asperiores in ex nobis ipsam eveniet nisi deleniti molestiae quas, quam alias sit minima nam. Ratione, fugit odio?</p>
+                        <div class="project-made-with">
+                            <span class="icon-wrap xd-icon">
+                                <i class="fi fi-brands-xd fi-icon" alt="adobe xd icon" title="adobe xd"></i>
+                            </span>
+                            <p>| Pen & Paper</p>
+                        </div>
+                        <div class="work-source">
+                            <a class="btn btn-secondary" href="./work/solarsmart.html" >View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row_projects works">
+                    <div class="left-column column work__column">
+                        <div class="projects-img-container">
+                            <img class="project-img p1" src="assets/images/animalrescue.png" alt="Lorem Animal Rescue">
+                        </div>       
+                    </div>
+                    <div class="right-column column work__column">
+                        <h3>Animal Rescue</h3>
+                        <span class="case-wrap">
+                            <h4 class="case-study">UID Case Study</h4>
+                        </span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, facilis animi itaque, asperiores in ex nobis ipsam eveniet nisi deleniti molestiae quas, quam alias sit minima nam. Ratione, fugit odio?</p>
+                        <div class="project-made-with">
+                            <span class="icon-wrap xd-icon">
+                                <i class="fi fi-brands-xd fi-icon" alt="adobe xd icon" title="adobe xd"></i>
+                            </span>
+                            <p>| Pen & Paper</p>
+                        </div>
+                        <div class="work-source">
+                            <a class="btn btn-secondary" href="./work/animal-rescue.html" >View Project</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+
+        <!-- contact section -->
+        <section class="contact content__wrap active" id="contact">
+            <div class="contact__content">
+                <h2>Contact.</h2>
+                <div class="contact-info email-wrap">
+                    <p>Get in touch through the form or send me an email directly on <a class="link" href="mailto:marty99skor@gmail.com">marty99skor@gmail.com</a></p>
+                </div>
+                <div class="row">
+                    <div class="left-column column">
+                        <form id="form" action="https://formspree.io/f/mnqrpwgq" method="POST">
+                            <div class="field">
+                                <input type="text" class="field__input" name="name" placeholder="Name" id="name" required>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="field__input" name="email" placeholder="Email" id="email" required>
+                            </div>
+                            <div class="field">
+                                <textarea type="textbox" class="field__input textinput" name="Message" placeholder="Message" id="message" required></textarea>
+                            </div>
+                            <button class="btn btn-submit btn-secondary" type="submit">Send Email</button>
+                        </form>
+                        
+                    </div>
+                    <div class="right-column column">
+                        
+                        <div class="contact-info socials-wrap">
+                            <p>You can also find me on these online spaces.</p>
+                            <span>
+                                <a href="https://www.linkedin.com/in/martine-s-skorbakk/" target="_blank" title="linkedin"><i data-feather="linkedin" class="feather-25"></i></a>
+                                <a href="https://twitter.com/martyscodes" target="_blank" title="twitter"><i data-feather="twitter" class="feather-25"></i></a>
+                                <a href="https://github.com/MarSkor" target="_blank" title="github"><i data-feather="github" class="feather-25"></i></a> 
+                                <a href="https://dribbble.com/maskor_" title="dribbble"><i data-feather="dribbble" class="feather-25"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-wrap">
+            <span class="footer-wrap__totop">
+                <a href="#intro" class="totop" title="back to top"><i class="arrow-up" data-feather="arrow-up"></i></a>
+            </span>
+            <div class="footer-wrap__madeby">
+               <p>&copy;2022 Designed and built by Martine</p>
+                <a class="link" href="https://github.com/MarSkor/marskor" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

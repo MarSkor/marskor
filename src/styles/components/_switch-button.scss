@@ -1,0 +1,103 @@
+
+.switch{
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-checkbox{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-slot{
+  -webkit-transition: .4s;
+  transition: .3s;
+  position: relative;
+  height: 28px;
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid var(--color-switch);
+  transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: $woodsmoke;
+}
+
+.toggle-button{
+  cursor: pointer;
+  transform: translate(34px,1.6px);
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: $electric-violet-tint;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot{
+  background-color: var(--color-bg);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button{
+  background-color: $woodsmoke;
+  transform: translate(2px, 1.8px);
+}
+
+.moon-icon{
+  position: absolute;
+  height:  22.4px;
+  width:  22.4px;
+  color: $woodsmoke;
+}
+
+.moon-icon-wrapper{
+  position: absolute;
+  height:  22.4px;
+  width:  22.4px;
+  opacity: 0;
+  transform: translate( -1px, 16px) rotate(15deg);
+  transform-origin: 50% 50%;
+  // transition: opacity 150ms, transform 500ms cubic-bezier(.23,.67,.5,.67);
+  
+  // transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.67);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+  opacity: 1;
+  transform: translate(35px, 2px) rotate(0deg);
+}
+
+.sun-icon{
+  position: absolute;
+  height: 22.4px;
+  width: 22.4px;
+  color: $dm-electric-violet;
+}
+
+.sun-icon-wrapper{
+  position: absolute;
+  height: 22.4px;
+  width: 22.4px;
+  opacity: 1;
+  transform: translate(5px, 2px) rotate(0deg);
+  transform-origin: 50% 50%;
+  // transition: opacity 150ms, transform 500ms cubic-bezier(.17,2,.83,.67);
+  // cubic-bezier(.26,2.5,.46,.71)
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+  opacity: 0;
+  transform: translate(48px, 3.2px) rotate(-15deg);
+}
+
+@media screen and (max-width:640px){
+  .theme-switch-wrap{
+    margin-right:50px;
+  }
+}
+
+

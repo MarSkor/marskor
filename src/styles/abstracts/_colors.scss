@@ -1,2 +1,81 @@
-$red: rgb(0, 208, 255);
 
+//neutrals
+$woodsmoke: #151515;
+$eerie-black: #1e1b22;
+$dark-charcoal: #2e2934; 
+$cod-grey: #383838; 
+$cod-grey-200: #c8c8c8;
+$cod-grey-400: #747474;
+$cod-grey-300: #afafaf;
+$white-pointer: #fcf7ff; 
+$anti-flashwhite:rgb(242, 242, 242);
+$justwhite: rgb(255, 252, 250);
+$apricot-white: rgb(255, 253, 235);
+
+
+
+
+//colors
+$burnt-sienna: #f4a887;
+$dm-electric-violet: #BD99FF; 
+$dm-electric-violet-tint:#ddcbff;
+
+$lavender: #b694f6; 
+$lavender-tint: #dbcbfb;
+$electric-violet: #470ff4;
+$electric-violet-tint: #a06dff; 
+$electric-violet-tint-bt: #c7aaff; 
+
+//semantic
+$error:#FF4C28;
+$success: #3ABC4E;
+
+//shadows
+$box-shadow: rgba(69, 69, 69, 0.604);
+
+
+//default - dark mode
+:root{
+    --color-primary: #{$woodsmoke};
+    --color-secondary:#{$dm-electric-violet};
+    --color-bg: #{$woodsmoke};
+    --color-heading:#{$white-pointer};
+    --color-font: #{$white-pointer};
+    --color-nav: #{$white-pointer};
+    --color-logo: #{$dm-electric-violet};
+    --color-switch: #{$electric-violet-tint};
+    --nav-active-menu: #{$electric-violet-tint};
+    --color-h-swap: #{$dm-electric-violet-tint};
+    --color-gradient: #{$dm-electric-violet-tint};
+    --color-font-hover: #{$woodsmoke};
+    --color-bg-swap: #{$eerie-black};
+    --color-grey: #{$cod-grey-200};
+    --color-electric-violet: #{$electric-violet-tint-bt};
+    --color-badge: #{$cod-grey};
+    --color-bc: #{$cod-grey-400};
+    --color-bg-v2: #{$eerie-black};
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --border-radius: 4px;
+} 
+
+// toggle - light mode
+[data-theme="light"]{
+    --color-primary: #{$woodsmoke};
+    --color-secondary:#{$lavender};
+    --color-bg: #{$white-pointer};
+    --color-heading:#{$woodsmoke};
+    --color-font:#{$eerie-black};
+    --color-nav: #{$woodsmoke};
+    --color-logo: #{$electric-violet};
+    --color-switch: #{$woodsmoke};
+    --nav-active-menu:#{$electric-violet};
+    --color-h-swap: #{$electric-violet};
+    --color-gradient: #{$electric-violet};
+    --color-font-hover: #{$white-pointer};
+    --color-bg-swap: #{$white-pointer};
+    --color-grey: #{$cod-grey};
+    --color-electric-violet: #{$electric-violet};
+    --color-badge: #{$cod-grey-200};
+    --color-bc: #{$cod-grey-300};
+    --color-bg-v2: #{$anti-flashwhite};
+}

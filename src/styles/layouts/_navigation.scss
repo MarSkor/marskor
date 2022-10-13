@@ -1,0 +1,235 @@
+.bracket{
+  color: var(--nav-active-menu);
+}
+
+nav{
+  width: 100%;
+  margin: 0 auto;
+  background: inherit;
+  position: fixed;
+  transition: .3s;
+  justify-content: center;
+}
+
+#nav{
+  z-index: 99;
+}
+
+#nav.scrolled{
+  color: var(--color-switch);
+  transition: .2s;
+}
+
+.nav-wrap{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo{
+    color: var(--color-logo);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: $font-raleway;
+    text-decoration:none ;
+    font-size: 35px;
+  &:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.nav-wrap .logo{
+  font-size: 25px;
+}
+
+.nav-wrap ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.nav-wrap ul li a{
+    position: relative;
+    display: block;
+    font-family: $font-opensans;
+    color: var(--color-nav);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+
+.nav-wrap ul li a:hover{
+  color: var(--nav-active-menu);
+}
+
+.navLink::before, nav .nav-wrap a.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 99px;
+  background-color: var(--nav-active-menu);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s,transform 0.2s ease-out;
+}
+
+.navLink:active::before, nav .nav-wrap a.active::before {
+  background-color: var(--nav-active-menu);
+}
+
+.navLink:hover::before, a:focus::before, nav .nav-wrap a.active::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+#check:checked + .checkbtn > span{
+  transform: rotate(45deg);
+}
+
+#check:checked + .checkbtn > span::before{
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#check:checked + .checkbtn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.checkbtn{
+  position: fixed;
+  top: 35px;
+  right: 0px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+  
+.checkbtn > span,
+.checkbtn > span::before,
+.checkbtn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-nav);
+  transition-duration: .3s;
+}
+
+.checkbtn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.checkbtn > span::after {
+  content: '';
+  top: 8px;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 640px){
+  .nav-wrap{
+    padding: 10px;
+  }
+  
+  .checkbtn{
+    display: block;
+    right: 10px;
+  }
+
+  label.logo{
+    font-size: 30px;
+  }
+  nav{
+    position: fixed;
+  }
+  nav .nav-wrap ul{
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background: var(--color-bg);
+    z-index: 98; 
+    top: 0px;
+    right: -100%;
+    text-align: center;
+    transition: all .4s;
+    display: flex;
+    flex-direction: column;
+    border-right-width: 0;
+    // border-top: 1px solid var(--color-nav);
+    border-right: 0; 
+    // border-bottom: 1px solid var(--color-nav); 
+    border-left: 1px solid var(--color-nav);
+  }
+
+  ul#navMenu{
+    justify-content: center;
+    text-align: center;
+    
+    li{
+      padding: 20px 40px 20px 0px;
+    }
+  }
+
+  .nav-wrap li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .nav-wrap ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    right: 0;
+  }
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

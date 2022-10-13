@@ -1,7 +1,8 @@
-// @use 'abstracts/fonts';
-// @use 'abstracts/colors';
-@use './abstracts' as *;
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 
-body{
-    background-color: $red;
-}
+@import "abstracts/__abstracts-dir";
+
+@import "components/__components-dir";
+
+@import "layouts/__layouts-dir";
+

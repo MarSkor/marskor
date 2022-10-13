@@ -1,0 +1,18 @@
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--color-bg-work);
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(219,203,251);
+    background: -moz-linear-gradient(180deg, rgba(219,203,251,1) 0%, rgba(160,109,255,1) 0%, rgba(89,35,191,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(219,203,251,1) 0%, rgba(160,109,255,1) 0%, rgba(89,35,191,1) 100%);
+    background: linear-gradient(180deg, rgba(219,203,251,1) 0%, rgba(160,109,255,1) 0%, rgba(89,35,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbcbfb",endColorstr="#5923bf",GradientType=1);
+    border-radius: 10px;
+}
+  
+ 
