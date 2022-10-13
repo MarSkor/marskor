@@ -158,6 +158,7 @@
     margin-top: 50px;  
 }
 
+// .toolbox-content,
 .about__content{
     h4{
         text-decoration: underline;
@@ -211,7 +212,6 @@
                 position: relative;
                 margin:  auto;
                 width: 90%;
-                // z-index: -1;
                 img{
                     position: relative;
                     z-index: 1;
@@ -251,6 +251,27 @@
             }
             .img-wrapper img:hover{
                 opacity: 1.0;
+            }
+            .random-about{
+                padding: 50px 0px 0px 30px;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px 0px 0px 0px;
+                }
+                ul li::before {
+                    content: "▹";
+                    color: var(--color-electric-violet);
+                }
+                li{
+                    margin: 10px 0px;
+                    color: var(--color-grey);
+                    font-family: $font-opensans;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
             }
         }
     }
