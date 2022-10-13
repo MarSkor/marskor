@@ -30,3 +30,7 @@ JavaScript bundler - Webpack
 
 - [Adobe Icons by Muhammad Haq](https://freeicons.io/profile/823) from [freeicons.io](https://freeicons.io)
 - [Feathericons](https://github.com/feathericons/feather#feather)
+
+## Inspiration
+
+-[anniebombanie](https://anniebombanie.com/) -[brittanychiang](https://brittanychiang.com/)
