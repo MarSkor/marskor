@@ -55,25 +55,23 @@
     }
 }
 
-.btn-secondary {
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    padding: 1em 2em;
-    text-decoration: none;
-  }
-
 
 .btn-secondary {  
-    color: var(--color-electric-violet);
-    transition: 0.25s;
-    border-radius: 4px;
-    &:hover,
-    &:focus { 
-        border-color: var(--color-electric-violet);
-        color: var(--color-bg);
-    }
+  font-family: $font-opensans;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: var(--color-electric-violet);
+  transition: 0.25s;
+  border-radius: 4px;
+  &:hover,
+  &:focus { 
+    border-color: var(--color-electric-violet);
+    color: var(--color-bg);
+  }
 }
 
 .btn-secondary:hover,
@@ -129,10 +127,14 @@ a.link {
   color: var(--color-font-hover);
 }
 
+.feather-20{
+  height: 20px;
+  width: 20px;
+}
+
 .feather-24{
   height: 24px;
   width: 24px;
-
 }
 
 .feather-25, .icon-25{
