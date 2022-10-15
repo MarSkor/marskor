@@ -111,10 +111,9 @@
         }
         li{
             margin: 10px 0px;
-            color: var(--color-grey);
+            color: var(--color-font);
             font-family: $font-opensans;
             font-weight: var(--font-weight);
-            // font-weight: 600;
             font-size: 17px;
         }      
 }
@@ -399,7 +398,7 @@
         margin: 50px auto 0px;
         width: 90%;
     }
-    .additional, .random-about li{
+    .additional li, .random-about li{
         font-size: 15px;
     }
 }
