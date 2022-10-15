@@ -25,6 +25,8 @@ $lavender-tint: #dbcbfb;
 $electric-violet: #470ff4;
 $electric-violet-tint: #a06dff; 
 $electric-violet-tint-bt: #c7aaff; 
+$electric-violet-50: #f6f3fe;
+$candlelight-200: #fef4c8;
 
 //semantic
 $error:#FF4C28;
@@ -56,6 +58,9 @@ $box-shadow: rgba(69, 69, 69, 0.604);
     --color-bg-v2: #{$eerie-black};
     --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     --border-radius: 4px;
+    --font-weight: 400;
+    --font-weight-nav: 500;
+    --candlelight-green-badge: #{$dark-charcoal};
 } 
 
 // toggle - light mode
@@ -78,4 +83,7 @@ $box-shadow: rgba(69, 69, 69, 0.604);
     --color-badge: #{$cod-grey-200};
     --color-bc: #{$cod-grey-300};
     --color-bg-v2: #{$anti-flashwhite};
+    --font-weight: 500;
+    --font-weight-nav: 600;
+    --candlelight-green-badge: #{$candlelight-200};   
 }

@@ -30,6 +30,8 @@ JavaScript bundler - Webpack
 
 - [Adobe Icons by Muhammad Haq](https://freeicons.io/profile/823) from [freeicons.io](https://freeicons.io)
 - [Feathericons](https://github.com/feathericons/feather#feather)
+- [Netlify icon](https://iconscout.com/icons/netlify) [by icon-54](https://iconscout.com/contributors/icon-54)
+- [Responsive Icon](https://iconscout.com/icons/responsive) [by Angga Yudotomo](https://iconscout.com/contributors/anggavisual93)
 
 ## Inspiration
 

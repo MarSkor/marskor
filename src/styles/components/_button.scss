@@ -147,3 +147,44 @@ a.link {
   height: 30px;
   width: 30px;
 }
+
+.icon-40{
+  font-size: 40px;
+}
+
+.icon-text{
+  font-size: 35px;
+}
+
+
+
+ 
+  // max-width: 100%;
+  // .svg-icon{
+  //   width: 100%;
+  //   max-width: 40px;
+  //   max-height: 40px;
+    
+ 
+  // }
+
+  // .svg-icon svg{
+  //   fill: var(--color-font);
+  // }
+
+
+
+.fi-icon{
+  font-size: 25px;
+}
+
+.icon-wrap .fi-icon::before, .icon-40::before{
+  color: var(--color-font);
+}
+
+.icon-wrap .fi-icon::before {
+  font-size: 25px;
+  color: var(--color-font);
+}
+
+

@@ -31,14 +31,13 @@ main{
 }
 
 section {
-    // max-width: 1200px;
     padding-top: 40px;
     min-height: 100vh;
 }
 
 
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, h6{
     font-family:$font-raleway;
     
 }
@@ -69,13 +68,20 @@ h3, h4{
 }
 
 h4{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 h5{
     color: var(--color-electric-violet);
     font-weight: 700;
+    font-size: 18px;
+}
+
+h6{
+    color: var(--color-font);
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 14px;
 }
 
@@ -89,7 +95,7 @@ a{
 
 p{
     color: var(--color-font);
-    font-weight: 500;
+    font-weight: var(--font-weight);
     font-size: 17px;
     line-height: 1.8;
 }

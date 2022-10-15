@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-// const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 
 const path = require('path');
@@ -13,11 +12,9 @@ module.exports = {
       index: './src/index.js',
       work:'./src/work/work.js'
     },
-    // entry: path.resolve(__dirname, './src/index.js'),
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        // publicPath: "/dist",
         assetModuleFilename: 'assets/[name][ext]'
   },
   plugins: [
@@ -57,8 +54,6 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          // "style-loader",
             MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
@@ -117,18 +112,6 @@ module.exports = {
     port: 8000,
     hot: false,
     liveReload: true,
-    // watch:true,
-    // watchOptions:{
-    //   ignored:/node_modules/,
-    // }
-    // compress: true,
-    // port: 8000,
   },
-  // devServer:{
-  //   contentBase: 'dist'
-  // },
-  // watch:true,
-  // watchOptions:{
-  //   ignored:/node_modules/,
-  // }
+
 };
