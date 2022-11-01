@@ -1,13 +1,15 @@
-.row, .row_projects, .div-column-wrap{
+.row, .row_projects, .div-column-wrap, .div-column-wrap{
     display: grid;
     margin: 20px 0px 50px;
+}
+
+.row, .row_projects, .div-column-wrap{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
+
 .div-column-wrap{
-    display: grid;
-    margin: 20px 0px 50px;
     grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
 }
 
@@ -35,6 +37,19 @@
     @include res-img;
     border-radius: 4px;
     @include boxShadow;
+}
+
+.work__content{
+    .flex-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .link-archive{
+            background-color: var(--color-electric-violet);
+            color: var(--color-bg-v2);
+            padding: 5px;
+        }
+    }
 }
 
 .work__column{

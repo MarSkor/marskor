@@ -10,7 +10,8 @@ module.exports = {
     mode: 'development',
     entry: {
       index: './src/index.js',
-      work:'./src/work/work.js'
+      work:'./src/work/work.js',
+      archive:'./src/archive/archive.js'
     },
     output: {
         filename: '[name].js',
@@ -42,6 +43,12 @@ module.exports = {
     template: './src/work/animal-rescue.html',
     inject: true,
     chunks: ['work'],
+  }),
+  new HtmlWebpackPlugin({ 
+    filename: 'archive/archive.html',
+    template: './src/archive/archive.html',
+    inject: true,
+    chunks: ['archive'],
   }),
   new MiniCssExtractPlugin({
     filename: "main.css"
