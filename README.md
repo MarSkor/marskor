@@ -2,17 +2,14 @@
 
 My portfolio website project.
 
-Darkmode (default)
 ![](./darkmode.png)
 
-Lightmode
 ![](./lightmode.png)
 
 ## Built with
 
 HTML, SCSS, JavaScript
 
-JavaScript bundler - Webpack
 
 ## Color Reference
 
